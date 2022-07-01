@@ -11,7 +11,7 @@ protocol AppRoute {
 
 extension AppRoute where Self: RouterProtocol {
     func setRootViewController() {
-        let rootController = HomeViewController()
+        let rootController = HomeViewController(viewModel: HomeViewModel(router: Router()))
         let transition = OnWindowTransition()
         open(rootController, transition: transition)
     }

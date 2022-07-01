@@ -14,6 +14,8 @@
 		F746DB1A286F687800C28C33 /* HelpersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F746DB19286F687800C28C33 /* HelpersTests.swift */; };
 		F746DB1B286F687800C28C33 /* Helpers.h in Headers */ = {isa = PBXBuildFile; fileRef = F746DB0D286F687700C28C33 /* Helpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F746DB3B286F6B1200C28C33 /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F746DB3A286F6B1200C28C33 /* UIApplication+Extensions.swift */; };
+		F746DB4D286F6E9900C28C33 /* TypeAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = F746DB4C286F6E9900C28C33 /* TypeAliases.swift */; };
+		F746DB4F286F6FC000C28C33 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F746DB4E286F6FC000C28C33 /* UIViewController+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +41,8 @@
 		F746DB14286F687800C28C33 /* HelpersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelpersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F746DB19286F687800C28C33 /* HelpersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpersTests.swift; sourceTree = "<group>"; };
 		F746DB3A286F6B1200C28C33 /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
+		F746DB4C286F6E9900C28C33 /* TypeAliases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeAliases.swift; sourceTree = "<group>"; };
+		F746DB4E286F6FC000C28C33 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,7 @@
 		F746DB0C286F687700C28C33 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				F746DB4B286F6E8700C28C33 /* TypeAliases */,
 				F746DB39286F6B0300C28C33 /* Extensions */,
 				F746DB0D286F687700C28C33 /* Helpers.h */,
 				F746DB0E286F687700C28C33 /* Helpers.docc */,
@@ -125,8 +130,17 @@
 			isa = PBXGroup;
 			children = (
 				F746DB3A286F6B1200C28C33 /* UIApplication+Extensions.swift */,
+				F746DB4E286F6FC000C28C33 /* UIViewController+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F746DB4B286F6E8700C28C33 /* TypeAliases */ = {
+			isa = PBXGroup;
+			children = (
+				F746DB4C286F6E9900C28C33 /* TypeAliases.swift */,
+			);
+			path = TypeAliases;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,6 +301,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F746DB4F286F6FC000C28C33 /* UIViewController+Extensions.swift in Sources */,
+				F746DB4D286F6E9900C28C33 /* TypeAliases.swift in Sources */,
 				F746DB3B286F6B1200C28C33 /* UIApplication+Extensions.swift in Sources */,
 				F746DB0F286F687700C28C33 /* Helpers.docc in Sources */,
 			);

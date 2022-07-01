@@ -17,6 +17,14 @@
 		F746DAE8286F682200C28C33 /* MovieAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F746DAE7286F682200C28C33 /* MovieAppTests.swift */; };
 		F746DAF2286F682200C28C33 /* MovieAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F746DAF1286F682200C28C33 /* MovieAppUITests.swift */; };
 		F746DAF4286F682200C28C33 /* MovieAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F746DAF3286F682200C28C33 /* MovieAppUITestsLaunchTests.swift */; };
+		F746DB2C286F6A5D00C28C33 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = F746DB2B286F6A5D00C28C33 /* Route.swift */; };
+		F746DB30286F6A9400C28C33 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F746DB2F286F6A9400C28C33 /* AppRouter.swift */; };
+		F746DB33286F6AB600C28C33 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = F746DB32286F6AB600C28C33 /* Router.swift */; };
+		F746DB36286F6ADB00C28C33 /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F746DB35286F6ADB00C28C33 /* Transition.swift */; };
+		F746DB38286F6AEC00C28C33 /* OnWindowTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F746DB37286F6AEC00C28C33 /* OnWindowTransition.swift */; };
+		F746DB3D286F6B3D00C28C33 /* Helpers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F746DB3C286F6B3D00C28C33 /* Helpers.framework */; };
+		F746DB3E286F6B3D00C28C33 /* Helpers.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F746DB3C286F6B3D00C28C33 /* Helpers.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F746DB41286F6B4E00C28C33 /* HomeScene.xib in Resources */ = {isa = PBXBuildFile; fileRef = F746DB40286F6B4E00C28C33 /* HomeScene.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +43,20 @@
 			remoteInfo = MovieApp;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F746DB3F286F6B3D00C28C33 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F746DB3E286F6B3D00C28C33 /* Helpers.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		79B68B36905A0A2865709CD6 /* Pods-MovieApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieApp.release.xcconfig"; path = "Target Support Files/Pods-MovieApp/Pods-MovieApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -57,6 +79,13 @@
 		F746DAED286F682200C28C33 /* MovieAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F746DAF1286F682200C28C33 /* MovieAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieAppUITests.swift; sourceTree = "<group>"; };
 		F746DAF3286F682200C28C33 /* MovieAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F746DB2B286F6A5D00C28C33 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		F746DB2F286F6A9400C28C33 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		F746DB32286F6AB600C28C33 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		F746DB35286F6ADB00C28C33 /* Transition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
+		F746DB37286F6AEC00C28C33 /* OnWindowTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnWindowTransition.swift; sourceTree = "<group>"; };
+		F746DB3C286F6B3D00C28C33 /* Helpers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Helpers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F746DB40286F6B4E00C28C33 /* HomeScene.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeScene.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F746DB3D286F6B3D00C28C33 /* Helpers.framework in Frameworks */,
 				F64E9E9DD57A87CC529CDB41 /* Pods_MovieApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -90,6 +120,7 @@
 		52BDECE844F4E7F58D0D75FE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F746DB3C286F6B3D00C28C33 /* Helpers.framework */,
 				D6602562B8E25D708B8D557D /* Pods_MovieApp.framework */,
 				8E9A6B57A5B72B282E04928A /* Pods_MovieApp_MovieAppUITests.framework */,
 				D404B19D39DB05A99EDEC2A0 /* Pods_MovieAppTests.framework */,
@@ -136,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				F746DB24286F691400C28C33 /* AppDelegate */,
+				F746DB2A286F6A4F00C28C33 /* Routing */,
 				F746DB25286F691D00C28C33 /* Scenes */,
 				F746DB26286F693400C28C33 /* Resources */,
 				F746DB27286F693B00C28C33 /* Configurations */,
@@ -205,8 +237,53 @@
 			isa = PBXGroup;
 			children = (
 				F746DAD4286F681E00C28C33 /* HomeViewController.swift */,
+				F746DB40286F6B4E00C28C33 /* HomeScene.xib */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		F746DB2A286F6A4F00C28C33 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				F746DB31286F6AA000C28C33 /* Core */,
+				F746DB2E286F6A8200C28C33 /* Routers */,
+				F746DB2D286F6A6200C28C33 /* Route */,
+				F746DB34286F6AC400C28C33 /* Transitions */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		F746DB2D286F6A6200C28C33 /* Route */ = {
+			isa = PBXGroup;
+			children = (
+				F746DB2B286F6A5D00C28C33 /* Route.swift */,
+			);
+			path = Route;
+			sourceTree = "<group>";
+		};
+		F746DB2E286F6A8200C28C33 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				F746DB2F286F6A9400C28C33 /* AppRouter.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		F746DB31286F6AA000C28C33 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F746DB32286F6AB600C28C33 /* Router.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		F746DB34286F6AC400C28C33 /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				F746DB35286F6ADB00C28C33 /* Transition.swift */,
+				F746DB37286F6AEC00C28C33 /* OnWindowTransition.swift */,
+			);
+			path = Transitions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +297,7 @@
 				F746DAC9286F681E00C28C33 /* Sources */,
 				F746DACA286F681E00C28C33 /* Frameworks */,
 				F746DACB286F681E00C28C33 /* Resources */,
+				F746DB3F286F6B3D00C28C33 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -317,6 +395,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F746DADD286F682100C28C33 /* LaunchScreen.storyboard in Resources */,
+				F746DB41286F6B4E00C28C33 /* HomeScene.xib in Resources */,
 				F746DADA286F682100C28C33 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,6 +490,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F746DB36286F6ADB00C28C33 /* Transition.swift in Sources */,
+				F746DB30286F6A9400C28C33 /* AppRouter.swift in Sources */,
+				F746DB2C286F6A5D00C28C33 /* Route.swift in Sources */,
+				F746DB33286F6AB600C28C33 /* Router.swift in Sources */,
+				F746DB38286F6AEC00C28C33 /* OnWindowTransition.swift in Sources */,
 				F746DAD5286F681E00C28C33 /* HomeViewController.swift in Sources */,
 				F746DAD1286F681E00C28C33 /* AppDelegate.swift in Sources */,
 			);
@@ -584,7 +668,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8ZB49XM27T;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MovieApp/Info.plist;
+				INFOPLIST_FILE = MovieApp/Configurations/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -613,7 +697,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8ZB49XM27T;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MovieApp/Info.plist;
+				INFOPLIST_FILE = MovieApp/Configurations/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

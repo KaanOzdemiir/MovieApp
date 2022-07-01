@@ -13,6 +13,7 @@
 		F746DB15286F687800C28C33 /* Helpers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F746DB0A286F687700C28C33 /* Helpers.framework */; };
 		F746DB1A286F687800C28C33 /* HelpersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F746DB19286F687800C28C33 /* HelpersTests.swift */; };
 		F746DB1B286F687800C28C33 /* Helpers.h in Headers */ = {isa = PBXBuildFile; fileRef = F746DB0D286F687700C28C33 /* Helpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F746DB3B286F6B1200C28C33 /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F746DB3A286F6B1200C28C33 /* UIApplication+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		F746DB0E286F687700C28C33 /* Helpers.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Helpers.docc; sourceTree = "<group>"; };
 		F746DB14286F687800C28C33 /* HelpersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelpersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F746DB19286F687800C28C33 /* HelpersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpersTests.swift; sourceTree = "<group>"; };
+		F746DB3A286F6B1200C28C33 /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 		F746DB0C286F687700C28C33 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				F746DB39286F6B0300C28C33 /* Extensions */,
 				F746DB0D286F687700C28C33 /* Helpers.h */,
 				F746DB0E286F687700C28C33 /* Helpers.docc */,
 			);
@@ -116,6 +119,14 @@
 				F746DB19286F687800C28C33 /* HelpersTests.swift */,
 			);
 			path = HelpersTests;
+			sourceTree = "<group>";
+		};
+		F746DB39286F6B0300C28C33 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F746DB3A286F6B1200C28C33 /* UIApplication+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F746DB3B286F6B1200C28C33 /* UIApplication+Extensions.swift in Sources */,
 				F746DB0F286F687700C28C33 /* Helpers.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,6 +445,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -462,6 +475,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -481,6 +495,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 14E9080F2672DBEB463385B9 /* Pods-Helpers-HelpersTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8ZB49XM27T;
@@ -498,6 +513,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8E17CF8DBDE6DDA4C0E88D32 /* Pods-Helpers-HelpersTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8ZB49XM27T;

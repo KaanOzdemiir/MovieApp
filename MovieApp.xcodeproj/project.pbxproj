@@ -11,7 +11,6 @@
 		AF82C5DAFD64BEDC73DC34D6 /* Pods_MovieApp_MovieAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E9A6B57A5B72B282E04928A /* Pods_MovieApp_MovieAppUITests.framework */; };
 		F64E9E9DD57A87CC529CDB41 /* Pods_MovieApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6602562B8E25D708B8D557D /* Pods_MovieApp.framework */; };
 		F746DAD1286F681E00C28C33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F746DAD0286F681E00C28C33 /* AppDelegate.swift */; };
-		F746DAD5286F681E00C28C33 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F746DAD4286F681E00C28C33 /* HomeViewController.swift */; };
 		F746DADA286F682100C28C33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F746DAD9286F682100C28C33 /* Assets.xcassets */; };
 		F746DADD286F682100C28C33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F746DADB286F682100C28C33 /* LaunchScreen.storyboard */; };
 		F746DAE8286F682200C28C33 /* MovieAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F746DAE7286F682200C28C33 /* MovieAppTests.swift */; };
@@ -24,10 +23,13 @@
 		F746DB38286F6AEC00C28C33 /* OnWindowTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F746DB37286F6AEC00C28C33 /* OnWindowTransition.swift */; };
 		F746DB3D286F6B3D00C28C33 /* Helpers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F746DB3C286F6B3D00C28C33 /* Helpers.framework */; };
 		F746DB3E286F6B3D00C28C33 /* Helpers.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F746DB3C286F6B3D00C28C33 /* Helpers.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F746DB41286F6B4E00C28C33 /* HomeScene.xib in Resources */ = {isa = PBXBuildFile; fileRef = F746DB40286F6B4E00C28C33 /* HomeScene.xib */; };
 		F746DB46286F6D1100C28C33 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F746DB45286F6D1100C28C33 /* BaseController.swift */; };
 		F746DB4A286F6D3100C28C33 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F746DB49286F6D3100C28C33 /* BaseViewModel.swift */; };
 		F746DB51286F712400C28C33 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F746DB50286F712400C28C33 /* HomeViewModel.swift */; };
+		F746DB62286F832D00C28C33 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F746DB60286F832D00C28C33 /* HomeController.swift */; };
+		F746DB63286F832D00C28C33 /* HomeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F746DB61286F832D00C28C33 /* HomeController.xib */; };
+		F746DB67286F855C00C28C33 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F746DB65286F855C00C28C33 /* MovieCell.swift */; };
+		F746DB68286F855C00C28C33 /* MovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F746DB66286F855C00C28C33 /* MovieCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,7 +75,6 @@
 		E58C74F616AB0BF55EEF168A /* Pods-MovieAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieAppTests.release.xcconfig"; path = "Target Support Files/Pods-MovieAppTests/Pods-MovieAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		F746DACD286F681E00C28C33 /* MovieApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F746DAD0286F681E00C28C33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F746DAD4286F681E00C28C33 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F746DAD9286F682100C28C33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F746DADC286F682100C28C33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F746DADE286F682100C28C33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -88,10 +89,13 @@
 		F746DB35286F6ADB00C28C33 /* Transition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
 		F746DB37286F6AEC00C28C33 /* OnWindowTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnWindowTransition.swift; sourceTree = "<group>"; };
 		F746DB3C286F6B3D00C28C33 /* Helpers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Helpers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F746DB40286F6B4E00C28C33 /* HomeScene.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeScene.xib; sourceTree = "<group>"; };
 		F746DB45286F6D1100C28C33 /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
 		F746DB49286F6D3100C28C33 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		F746DB50286F712400C28C33 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		F746DB60286F832D00C28C33 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		F746DB61286F832D00C28C33 /* HomeController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeController.xib; sourceTree = "<group>"; };
+		F746DB65286F855C00C28C33 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		F746DB66286F855C00C28C33 /* MovieCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -296,8 +300,9 @@
 		F746DB42286F6CE400C28C33 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F746DAD4286F681E00C28C33 /* HomeViewController.swift */,
-				F746DB40286F6B4E00C28C33 /* HomeScene.xib */,
+				F746DB60286F832D00C28C33 /* HomeController.swift */,
+				F746DB61286F832D00C28C33 /* HomeController.xib */,
+				F746DB64286F853F00C28C33 /* Cell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -333,6 +338,15 @@
 				F746DB49286F6D3100C28C33 /* BaseViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F746DB64286F853F00C28C33 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F746DB65286F855C00C28C33 /* MovieCell.swift */,
+				F746DB66286F855C00C28C33 /* MovieCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -444,7 +458,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F746DADD286F682100C28C33 /* LaunchScreen.storyboard in Resources */,
-				F746DB41286F6B4E00C28C33 /* HomeScene.xib in Resources */,
+				F746DB63286F832D00C28C33 /* HomeController.xib in Resources */,
+				F746DB68286F855C00C28C33 /* MovieCell.xib in Resources */,
 				F746DADA286F682100C28C33 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -542,11 +557,12 @@
 				F746DB36286F6ADB00C28C33 /* Transition.swift in Sources */,
 				F746DB30286F6A9400C28C33 /* AppRouter.swift in Sources */,
 				F746DB2C286F6A5D00C28C33 /* Route.swift in Sources */,
+				F746DB67286F855C00C28C33 /* MovieCell.swift in Sources */,
 				F746DB51286F712400C28C33 /* HomeViewModel.swift in Sources */,
+				F746DB62286F832D00C28C33 /* HomeController.swift in Sources */,
 				F746DB33286F6AB600C28C33 /* Router.swift in Sources */,
 				F746DB38286F6AEC00C28C33 /* OnWindowTransition.swift in Sources */,
 				F746DB4A286F6D3100C28C33 /* BaseViewModel.swift in Sources */,
-				F746DAD5286F681E00C28C33 /* HomeViewController.swift in Sources */,
 				F746DB46286F6D1100C28C33 /* BaseController.swift in Sources */,
 				F746DAD1286F681E00C28C33 /* AppDelegate.swift in Sources */,
 			);

@@ -16,6 +16,8 @@
 		F746DB3B286F6B1200C28C33 /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F746DB3A286F6B1200C28C33 /* UIApplication+Extensions.swift */; };
 		F746DB4D286F6E9900C28C33 /* TypeAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = F746DB4C286F6E9900C28C33 /* TypeAliases.swift */; };
 		F746DB4F286F6FC000C28C33 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F746DB4E286F6FC000C28C33 /* UIViewController+Extensions.swift */; };
+		F746DB53286F757800C28C33 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F746DB52286F757800C28C33 /* UITableView+Extensions.swift */; };
+		F746DB6A286F869A00C28C33 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F746DB69286F869A00C28C33 /* UIColor+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,8 @@
 		F746DB3A286F6B1200C28C33 /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
 		F746DB4C286F6E9900C28C33 /* TypeAliases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeAliases.swift; sourceTree = "<group>"; };
 		F746DB4E286F6FC000C28C33 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		F746DB52286F757800C28C33 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
+		F746DB69286F869A00C28C33 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +135,8 @@
 			children = (
 				F746DB3A286F6B1200C28C33 /* UIApplication+Extensions.swift */,
 				F746DB4E286F6FC000C28C33 /* UIViewController+Extensions.swift */,
+				F746DB52286F757800C28C33 /* UITableView+Extensions.swift */,
+				F746DB69286F869A00C28C33 /* UIColor+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -301,6 +307,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F746DB53286F757800C28C33 /* UITableView+Extensions.swift in Sources */,
+				F746DB6A286F869A00C28C33 /* UIColor+Extensions.swift in Sources */,
 				F746DB4F286F6FC000C28C33 /* UIViewController+Extensions.swift in Sources */,
 				F746DB4D286F6E9900C28C33 /* TypeAliases.swift in Sources */,
 				F746DB3B286F6B1200C28C33 /* UIApplication+Extensions.swift in Sources */,

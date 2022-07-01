@@ -7,12 +7,18 @@
 
 import UIKit
 
-class BaseController<V: BaseViewModelProtocol>: UIViewController {
+protocol BaseControllerProtocol {
+    func subscribeViewModel()
+    func configureViews()
+}
+
+class BaseController<V: BaseViewModelProtocol>: UIViewController, BaseControllerProtocol {
     
     var viewModel: V
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureViews()
         subscribeViewModel()
     }
     
@@ -25,7 +31,7 @@ class BaseController<V: BaseViewModelProtocol>: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private func subscribeViewModel() {
+    internal func subscribeViewModel() {
         viewModel.showLoading = { [weak self] in
             self?.showLoading()
         }
@@ -34,4 +40,6 @@ class BaseController<V: BaseViewModelProtocol>: UIViewController {
             self?.hideLoading()
         }
     }
+    
+    func configureViews() { }
 }

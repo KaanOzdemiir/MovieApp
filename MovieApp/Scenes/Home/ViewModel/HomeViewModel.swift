@@ -74,7 +74,13 @@ extension HomeViewModel {
             case .success(let response):
                 self?.results = response.results ?? []
             case .failure(let error):
-                print(error.localizedDescription)
+                AlertHelper.shared.showAlert(
+                    title: "Something went wrong",
+                    message: error.localizedDescription,
+                    actions: [
+                        .init(title: "OK", style: .default)
+                    ]
+                )
             }
             self?.hideLoading?()
         }

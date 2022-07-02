@@ -11,6 +11,7 @@ use_frameworks!
 
 # Pod Variables
 $alamofire = pod 'Alamofire', '~> 5.4'
+$kingfisher = pod 'Kingfisher', '~> 7.0'
 
 target 'MovieApp' do
   # Comment the next line if you don't want to use dynamic frameworks
@@ -19,6 +20,8 @@ target 'MovieApp' do
   # Pods for MovieSampleApp
 
   $alamofire
+  $kingfisher
+  
   target 'MovieAppTests' do
     inherit! :search_paths
     # Pods for testing

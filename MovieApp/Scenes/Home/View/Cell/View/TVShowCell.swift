@@ -6,15 +6,21 @@
 //
 
 import UIKit
+import Kingfisher
 
 class TVShowCell: UICollectionViewCell {
 
+    // MARK: IBOutlets
+    @IBOutlet private weak var posterImageView: UIImageView!
+    @IBOutlet private weak var nameLabel: UILabel!
+    @IBOutlet private weak var voteRateLabel: UILabel!
+    @IBOutlet private weak var firstAirDateLabel: UILabel!
+    
     var viewModel: TVShowCellViewModel? {
         didSet {
             updateViews()
         }
     }
-    @IBOutlet weak var label: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,10 +30,25 @@ class TVShowCell: UICollectionViewCell {
     
     private func updateViews() {
         guard let viewModel = viewModel else { return }
-        label.text = viewModel.name
+        nameLabel.text = viewModel.name
+        voteRateLabel.attributedText = viewModel.voteAvarageText
+        voteRateLabel.superview?.isHidden = viewModel.shouldHideVoteAvarage
+        firstAirDateLabel.text = viewModel.firstAirDateText
+        posterImageView.kf.setImage(with: viewModel.posterImageURL)
     }
     
     private func configureViews() {
-        label.textAlignment = .center
+        posterImageView.kf.indicatorType = .activity
+        posterImageView.layer.cornerRadius = 36
+        posterImageView.layer.masksToBounds = true
+        
+        nameLabel.font = UIFont.systemFont(ofSize: 14, weight: .medium)
+        nameLabel.textColor = .basic900
+        
+        voteRateLabel.font = UIFont.systemFont(ofSize: 12, weight: .regular)
+        voteRateLabel.textColor = .basic600
+        
+        firstAirDateLabel.font = UIFont.systemFont(ofSize: 12, weight: .regular)
+        firstAirDateLabel.textColor = .basic600
     }
 }

@@ -11,17 +11,6 @@ import Helpers
 
 final class HomeViewModel: BaseViewModel<HomeRouter> {
     
-    var numberOfItems: Int {
-        20
-    }
-    
-    var cellSize: CGSize {
-        CGSize(
-            width: 200,
-            height: 200
-        )
-    }
-    
     var results: [TVShowResult] = [] {
         didSet {
             updateViews?()
@@ -40,6 +29,38 @@ final class HomeViewModel: BaseViewModel<HomeRouter> {
             return TVShowCellViewModel(tvShow: result)
         }
         return nil
+    }
+    
+    var numberOfItems: Int {
+        results.count
+    }
+    
+    var imageRatio: CGFloat {
+        380 / 570
+    }
+    
+    var cellSize: CGSize {
+        let width = (UIScreen.screenWidth - edgeInset.left - edgeInset.right) / numberOfRow - cellPadding
+        return CGSize(
+            width: width,
+            height: width / imageRatio + tvShowInfoAreaHeight
+        )
+    }
+    
+    var tvShowInfoAreaHeight: CGFloat {
+        40 + 16
+    }
+    
+    var numberOfRow: CGFloat {
+        2
+    }
+    
+    var cellPadding: CGFloat {
+        10
+    }
+    
+    var edgeInset: UIEdgeInsets {
+        UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)
     }
 }
 

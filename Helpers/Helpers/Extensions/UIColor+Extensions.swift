@@ -16,4 +16,16 @@ public extension UIColor {
             alpha: 1.0
         )
     }
+    
+    class var basic900: UIColor {
+        UIColor(red: 13.0 / 255.0, green: 19.0 / 255.0, blue: 33.0 / 255.0, alpha: 1.0)
+    }
+    
+    class var basic400: UIColor {
+        UIColor(red: 199.0 / 255.0, green: 200.0 / 255.0, blue: 203.0 / 255.0, alpha: 1.0)
+    }
+    
+    class var basic600: UIColor {
+        UIColor(red: 127.0 / 255.0, green: 128.0 / 255.0, blue: 131.0 / 255.0, alpha: 1.0)
+    }
 }

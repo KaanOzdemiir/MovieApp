@@ -6,5 +6,5 @@ Modular structure
 Router Pattern
 
 Used Libraries
-# Alamofire
-# Kingfisher
+- Alamofire
+- Kingfisher

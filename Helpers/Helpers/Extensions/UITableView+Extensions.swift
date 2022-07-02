@@ -7,24 +7,24 @@
 
 import UIKit
 
-public protocol TableViewReusableCellProtocol {
+public protocol CollectionViewReusableCellProtocol {
     static var cellIdentifier: String { get }
     static var nib: UINib { get }
 }
 
-public extension TableViewReusableCellProtocol where Self: UITableViewCell {
+public extension CollectionViewReusableCellProtocol where Self: UICollectionViewCell {
     static var cellIdentifier: String { String(describing: self) }
     static var nib: UINib { UINib(nibName: String(describing: self), bundle: nil) }
 }
 
-extension UITableViewCell: TableViewReusableCellProtocol { }
+extension UICollectionViewCell: CollectionViewReusableCellProtocol { }
 
-public extension UITableView {
-    func register<C: TableViewReusableCellProtocol>(cell: C.Type) {
-        self.register(C.nib, forCellReuseIdentifier: C.cellIdentifier)
+public extension UICollectionView {
+    func register<C: CollectionViewReusableCellProtocol>(cell: C.Type) {
+        self.register(C.nib, forCellWithReuseIdentifier: C.cellIdentifier)
     }
     
-    func dequeue<C: TableViewReusableCellProtocol>(cell: C.Type, indexPath: IndexPath) -> C {
-        self.dequeueReusableCell(withIdentifier: C.cellIdentifier, for: indexPath) as! C
+    func dequeue<C: CollectionViewReusableCellProtocol>(cell: C.Type, indexPath: IndexPath) -> C {
+        self.dequeueReusableCell(withReuseIdentifier: C.cellIdentifier, for: indexPath) as! C
     }
 }

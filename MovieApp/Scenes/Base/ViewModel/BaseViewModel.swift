@@ -6,18 +6,21 @@
 //
 
 import Helpers
+import API
 
 protocol BaseViewModelProtocol: AnyObject {
     var showLoading: VoidClosure? { get set }
     var hideLoading: VoidClosure? { get set }
 }
 
-class BaseViewModel<R: Router>: BaseViewModelProtocol{
+class BaseViewModel<R: Router>: BaseViewModelProtocol {
     
+    var dataProvider: DataProviderProtocol
     var router: R
     
-    init(router: R) {
+    init(router: R, dataProvider: DataProviderProtocol = APIDataProvider.shared) {
         self.router = router
+        self.dataProvider = dataProvider
     }
     
     var showLoading: VoidClosure?

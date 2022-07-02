@@ -10,36 +10,50 @@ import UIKit
 class HomeController: BaseController<HomeViewModel> {
     
     // MARK: Outlets
-    @IBOutlet private weak var movieTableView: UITableView!
+    @IBOutlet private weak var tvShowCollectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
+    
+    override func subscribeViewModel() {
+        super.subscribeViewModel()
+        viewModel.updateViews = { [weak self] in
+            guard let self = self else { return }
+            self.tvShowCollectionView.reloadData()
+        }
+    }
 
     override func configureViews() {
-        movieTableView.register(cell: MovieCell.self)
-        movieTableView.dataSource = self
-        movieTableView.delegate = self
+        tvShowCollectionView.register(cell: TVShowCell.self)
+        tvShowCollectionView.dataSource = self
+        tvShowCollectionView.delegate = self
     }
 }
 
-// MARK: UITableViewDataSource
-extension HomeController: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        viewModel.numberOfRows
+// MARK: UICollectionViewDataSource
+extension HomeController: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        viewModel.numberOfItems
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeue(cell: MovieCell.self, indexPath: indexPath)
-        cell.backgroundColor = .random
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeue(cell: TVShowCell.self, indexPath: indexPath)
+        cell.viewModel = viewModel.cellViewModel(at: indexPath)
         return cell
     }
 }
 
-// MARK: UITableViewDelegate
-extension HomeController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        viewModel.cellHeight
+// MARK: UICollectionViewDelegate
+extension HomeController: UICollectionViewDelegate {
+    
+}
+
+// MARK: UICollectionViewDelegateFlowLayout
+extension HomeController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        viewModel.cellSize
     }
 }
+

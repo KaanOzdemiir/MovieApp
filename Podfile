@@ -5,8 +5,12 @@ workspace 'MovieSampleApp'
 
 project 'MovieApp.xcodeproj'
 project 'Helpers/Helpers.xcodeproj'
+project 'API/API.xcodeproj'
 
 use_frameworks!
+
+# Pod Variables
+$alamofire = pod 'Alamofire', '~> 5.4'
 
 target 'MovieApp' do
   # Comment the next line if you don't want to use dynamic frameworks
@@ -14,6 +18,7 @@ target 'MovieApp' do
 
   # Pods for MovieSampleApp
 
+  $alamofire
   target 'MovieAppTests' do
     inherit! :search_paths
     # Pods for testing
@@ -32,6 +37,18 @@ target 'Helpers' do
   # Pods for Helpers
 
   target 'HelpersTests' do
+    # Pods for testing
+  end
+
+end
+
+target 'API' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  project 'API/API.xcodeproj'
+
+  # Pods for Helpers
+
+  target 'APITests' do
     # Pods for testing
   end
 

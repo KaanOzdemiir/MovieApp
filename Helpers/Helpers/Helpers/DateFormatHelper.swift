@@ -10,7 +10,7 @@ import Foundation
 public struct DateFormatHelper {
     
     public enum DateFormat: String {
-        case dd_MMMM_yyyy = "dd MMMM yyyy"
+        case d_MMMM_yyyy = "d MMMM yyyy"
         case yyyy__MM__dd = "yyyy-MM-dd"
     }
     
@@ -21,7 +21,7 @@ public struct DateFormatHelper {
         
         let formatter = DateFormatter()
         formatter.dateFormat = from.rawValue
-        
+        formatter.locale = Locale(identifier: "tr_TR")
         
         guard let date = formatter.date(from: dateString) else {
             return ""

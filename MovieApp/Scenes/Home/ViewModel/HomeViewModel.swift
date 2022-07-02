@@ -21,7 +21,6 @@ final class HomeViewModel: BaseViewModel<HomeRouter> {
     
     init(router: HomeRouter) {
         super.init(router: router)
-        self.fetchPopularTVShows()
     }
     
     func cellViewModel(at indexPath: IndexPath) -> TVShowCellViewModel? {
@@ -66,7 +65,7 @@ final class HomeViewModel: BaseViewModel<HomeRouter> {
 
 // MARK: Network
 extension HomeViewModel {
-    private func fetchPopularTVShows() {
+    func fetchPopularTVShows() {
         let request = PopularTVShowsRequest()
         
         showLoading?()

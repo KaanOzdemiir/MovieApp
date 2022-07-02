@@ -14,7 +14,7 @@ class HomeController: BaseController<HomeViewModel> {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        viewModel.fetchPopularTVShows()
     }
     
     override func subscribeViewModel() {

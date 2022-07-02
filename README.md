@@ -1,9 +1,9 @@
 # MovieApp
 
 Swift technology
-MVVM architecture
-Modular structure
-Router Pattern
+- MVVM architecture
+- Modular structure
+- Router Pattern
 
 Used Libraries
 - Alamofire

@@ -47,7 +47,9 @@ extension HomeController: UICollectionViewDataSource {
 
 // MARK: UICollectionViewDelegate
 extension HomeController: UICollectionViewDelegate {
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        viewModel.pushDetail(at: indexPath)
+    }
 }
 
 // MARK: UICollectionViewDelegateFlowLayout

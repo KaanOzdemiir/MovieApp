@@ -7,6 +7,6 @@
 
 import Foundation
 
-class HomeRouter: Router {
-    
+class HomeRouter: Router, HomeRouter.Routes {
+    typealias Routes = DetailRoute
 }

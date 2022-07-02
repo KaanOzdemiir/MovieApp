@@ -18,7 +18,7 @@ class OnWindowTransition: Transition {
             options: .transitionCrossDissolve,
             animations: {
                 UIView.performWithoutAnimation {
-                    window.rootViewController = viewController
+                    window.rootViewController = UINavigationController(rootViewController: viewController)
                 }
             },
             completion: nil)

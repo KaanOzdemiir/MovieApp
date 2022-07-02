@@ -45,11 +45,11 @@ class TVShowCellViewModel {
         tvShow.firstAirDate
     }
     
-    var posterImageURL: URL? {
-        URL(string: tvShow.posterPath.fixedPath)
-    }
-    
     var firstAirDateText: String {
         DateFormatHelper.format(firstAirDate, from: .yyyy__MM__dd, to: .dd_MMMM_yyyy)
+    }
+    
+    var posterImageURL: URL? {
+        URL(string: tvShow.posterPath.fixedPath)
     }
 }

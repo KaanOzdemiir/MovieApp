@@ -81,3 +81,14 @@ extension HomeViewModel {
         }
     }
 }
+
+// MARK: Route
+extension HomeViewModel {
+    func pushDetail(at indexPath: IndexPath) {
+        guard let tvShow = cellViewModel(at: indexPath)?.tvShow else {
+            assertionFailure("Can not find tv show")
+            return
+        }
+        router.pushDetail(tvShow: tvShow)
+    }
+}

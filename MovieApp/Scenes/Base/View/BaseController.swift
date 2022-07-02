@@ -22,6 +22,11 @@ class BaseController<V: BaseViewModelProtocol>: UIViewController, BaseController
         subscribeViewModel()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    
     init(viewModel: V) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)

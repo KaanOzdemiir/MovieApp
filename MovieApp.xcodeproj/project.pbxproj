@@ -36,6 +36,13 @@
 		F7C19A0128701F5E00BBC0AA /* TVShowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C199FF28701F5E00BBC0AA /* TVShowCell.swift */; };
 		F7C19A0228701F5E00BBC0AA /* TVShowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7C19A0028701F5E00BBC0AA /* TVShowCell.xib */; };
 		F7C19A062870202900BBC0AA /* TVShowCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C19A052870202900BBC0AA /* TVShowCellViewModel.swift */; };
+		F7C19A1528703B7800BBC0AA /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C19A1328703B7800BBC0AA /* DetailController.swift */; };
+		F7C19A1628703B7800BBC0AA /* DetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7C19A1428703B7800BBC0AA /* DetailController.xib */; };
+		F7C19A1A28703B9300BBC0AA /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C19A1928703B9300BBC0AA /* DetailViewModel.swift */; };
+		F7C19A1C28703EC400BBC0AA /* DetailRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C19A1B28703EC400BBC0AA /* DetailRoute.swift */; };
+		F7C19A1E28703F5800BBC0AA /* PushTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C19A1D28703F5800BBC0AA /* PushTransition.swift */; };
+		F7C19A202870405900BBC0AA /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C19A1F2870405800BBC0AA /* DetailRouter.swift */; };
+		F7C19A22287046E100BBC0AA /* HomeRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C19A21287046E100BBC0AA /* HomeRoute.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +115,13 @@
 		F7C199FF28701F5E00BBC0AA /* TVShowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowCell.swift; sourceTree = "<group>"; };
 		F7C19A0028701F5E00BBC0AA /* TVShowCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TVShowCell.xib; sourceTree = "<group>"; };
 		F7C19A052870202900BBC0AA /* TVShowCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowCellViewModel.swift; sourceTree = "<group>"; };
+		F7C19A1328703B7800BBC0AA /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
+		F7C19A1428703B7800BBC0AA /* DetailController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailController.xib; sourceTree = "<group>"; };
+		F7C19A1928703B9300BBC0AA /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		F7C19A1B28703EC400BBC0AA /* DetailRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRoute.swift; sourceTree = "<group>"; };
+		F7C19A1D28703F5800BBC0AA /* PushTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushTransition.swift; sourceTree = "<group>"; };
+		F7C19A1F2870405800BBC0AA /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
+		F7C19A21287046E100BBC0AA /* HomeRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRoute.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +245,7 @@
 				F746DB44286F6CEE00C28C33 /* Base */,
 				F746DB28286F694600C28C33 /* Splash */,
 				F746DB29286F694D00C28C33 /* Home */,
+				F7C19A1228703B4A00BBC0AA /* Detail */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -265,6 +280,7 @@
 				F746DB43286F6CEA00C28C33 /* ViewModel */,
 				F746DB42286F6CE400C28C33 /* View */,
 				F7C199FA28701CD200BBC0AA /* Router */,
+				F7C19A23287046E400BBC0AA /* Route */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -309,6 +325,7 @@
 			children = (
 				F746DB35286F6ADB00C28C33 /* Transition.swift */,
 				F746DB37286F6AEC00C28C33 /* OnWindowTransition.swift */,
+				F7C19A1D28703F5800BBC0AA /* PushTransition.swift */,
 			);
 			path = Transitions;
 			sourceTree = "<group>";
@@ -397,6 +414,42 @@
 				F7C19A052870202900BBC0AA /* TVShowCellViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F7C19A1228703B4A00BBC0AA /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				F7C19A1828703B8700BBC0AA /* ViewModel */,
+				F7C19A1728703B8300BBC0AA /* View */,
+				F7C19A1B28703EC400BBC0AA /* DetailRoute.swift */,
+				F7C19A1F2870405800BBC0AA /* DetailRouter.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		F7C19A1728703B8300BBC0AA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F7C19A1328703B7800BBC0AA /* DetailController.swift */,
+				F7C19A1428703B7800BBC0AA /* DetailController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F7C19A1828703B8700BBC0AA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F7C19A1928703B9300BBC0AA /* DetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F7C19A23287046E400BBC0AA /* Route */ = {
+			isa = PBXGroup;
+			children = (
+				F7C19A21287046E100BBC0AA /* HomeRoute.swift */,
+			);
+			path = Route;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -512,6 +565,7 @@
 				F746DADD286F682100C28C33 /* LaunchScreen.storyboard in Resources */,
 				F746DB63286F832D00C28C33 /* HomeController.xib in Resources */,
 				F7C19A0228701F5E00BBC0AA /* TVShowCell.xib in Resources */,
+				F7C19A1628703B7800BBC0AA /* DetailController.xib in Resources */,
 				F746DADA286F682100C28C33 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -640,20 +694,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7C19A1A28703B9300BBC0AA /* DetailViewModel.swift in Sources */,
+				F7C19A1E28703F5800BBC0AA /* PushTransition.swift in Sources */,
 				F7C19A0128701F5E00BBC0AA /* TVShowCell.swift in Sources */,
 				F746DB36286F6ADB00C28C33 /* Transition.swift in Sources */,
 				F746DB30286F6A9400C28C33 /* AppRouter.swift in Sources */,
+				F7C19A202870405900BBC0AA /* DetailRouter.swift in Sources */,
 				F746DB2C286F6A5D00C28C33 /* Route.swift in Sources */,
 				F746DB51286F712400C28C33 /* HomeViewModel.swift in Sources */,
 				F746DB62286F832D00C28C33 /* HomeController.swift in Sources */,
 				F7C199F52870112C00BBC0AA /* AlamofireRequestConverter.swift in Sources */,
 				F746DB33286F6AB600C28C33 /* Router.swift in Sources */,
+				F7C19A1528703B7800BBC0AA /* DetailController.swift in Sources */,
 				F746DB38286F6AEC00C28C33 /* OnWindowTransition.swift in Sources */,
 				F7C199F928701AB700BBC0AA /* HomeRouter.swift in Sources */,
+				F7C19A1C28703EC400BBC0AA /* DetailRoute.swift in Sources */,
 				F746DB4A286F6D3100C28C33 /* BaseViewModel.swift in Sources */,
 				F746DB46286F6D1100C28C33 /* BaseController.swift in Sources */,
 				F746DAD1286F681E00C28C33 /* AppDelegate.swift in Sources */,
 				F7C19A062870202900BBC0AA /* TVShowCellViewModel.swift in Sources */,
+				F7C19A22287046E100BBC0AA /* HomeRoute.swift in Sources */,
 				F747F64228700CF400E7F04D /* APIDataProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

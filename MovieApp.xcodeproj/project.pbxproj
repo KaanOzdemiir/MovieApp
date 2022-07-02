@@ -391,6 +391,22 @@
 			path = "API Data Provider";
 			sourceTree = "<group>";
 		};
+		F76C7E602870B1B0002527D1 /* Route */ = {
+			isa = PBXGroup;
+			children = (
+				F7C19A1B28703EC400BBC0AA /* DetailRoute.swift */,
+			);
+			name = Route;
+			sourceTree = "<group>";
+		};
+		F76C7E612870B1B7002527D1 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F7C19A1F2870405800BBC0AA /* DetailRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		F7C199FA28701CD200BBC0AA /* Router */ = {
 			isa = PBXGroup;
 			children = (
@@ -421,8 +437,8 @@
 			children = (
 				F7C19A1828703B8700BBC0AA /* ViewModel */,
 				F7C19A1728703B8300BBC0AA /* View */,
-				F7C19A1B28703EC400BBC0AA /* DetailRoute.swift */,
-				F7C19A1F2870405800BBC0AA /* DetailRouter.swift */,
+				F76C7E602870B1B0002527D1 /* Route */,
+				F76C7E612870B1B7002527D1 /* Router */,
 			);
 			path = Detail;
 			sourceTree = "<group>";

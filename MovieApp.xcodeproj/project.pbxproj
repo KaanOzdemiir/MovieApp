@@ -109,6 +109,7 @@
 		F746DB60286F832D00C28C33 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		F746DB61286F832D00C28C33 /* HomeController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeController.xib; sourceTree = "<group>"; };
 		F747F64128700CF400E7F04D /* APIDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDataProvider.swift; sourceTree = "<group>"; };
+		F79933D428716A9F00AC19F6 /* MovieAppConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = MovieAppConfig.xcconfig; sourceTree = "<group>"; };
 		F7C199EF28700EE700BBC0AA /* API.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = API.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7C199F42870112C00BBC0AA /* AlamofireRequestConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireRequestConverter.swift; sourceTree = "<group>"; };
 		F7C199F828701AB700BBC0AA /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
@@ -262,6 +263,7 @@
 			isa = PBXGroup;
 			children = (
 				F746DADE286F682100C28C33 /* Info.plist */,
+				F79933D428716A9F00AC19F6 /* MovieAppConfig.xcconfig */,
 			);
 			path = Configurations;
 			sourceTree = "<group>";
@@ -780,6 +782,7 @@
 /* Begin XCBuildConfiguration section */
 		F746DAF5286F682200C28C33 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F79933D428716A9F00AC19F6 /* MovieAppConfig.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -840,6 +843,7 @@
 		};
 		F746DAF6286F682200C28C33 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F79933D428716A9F00AC19F6 /* MovieAppConfig.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;

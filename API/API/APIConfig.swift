@@ -18,6 +18,6 @@ struct APIConfig {
     }
     
     static var apiKey: String {
-        "8b0f3b3d203ed2dd5e3ff1349dd9489f"
+        (Bundle.main.infoDictionary?["API_KEY"] as? String) ?? ""
     }
 }

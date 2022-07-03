@@ -10,8 +10,8 @@ import Foundation
 public struct DateFormatHelper {
     
     public enum DateFormat: String {
-        case d_MMMM_yyyy = "d MMMM yyyy"
-        case yyyy__MM__dd = "yyyy-MM-dd"
+        case dayMonthYear = "d MMMM yyyy"
+        case yearMonthDay = "yyyy-MM-dd"
     }
     
     public static func format(_ dateString: String?, from: DateFormat, to: DateFormat) -> String {

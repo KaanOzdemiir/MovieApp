@@ -46,7 +46,7 @@ class TVShowCellViewModel {
     }
     
     var firstAirDateText: String {
-        DateFormatHelper.format(firstAirDate, from: .yyyy__MM__dd, to: .d_MMMM_yyyy)
+        DateFormatHelper.format(firstAirDate, from: .yearMonthDay, to: .dayMonthYear)
     }
     
     var posterImageURL: URL? {

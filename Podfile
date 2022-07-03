@@ -12,7 +12,7 @@ use_frameworks!
 # Pod Variables
 $alamofire = pod 'Alamofire', '~> 5.4'
 $kingfisher = pod 'Kingfisher', '~> 7.0'
-
+$swiftlint = pod 'SwiftLint', '~> 0.42'
 target 'MovieApp' do
   # Comment the next line if you don't want to use dynamic frameworks
   project 'MovieApp.xcodeproj'
@@ -21,6 +21,7 @@ target 'MovieApp' do
 
   $alamofire
   $kingfisher
+  $swiftlint
   
   target 'MovieAppTests' do
     inherit! :search_paths

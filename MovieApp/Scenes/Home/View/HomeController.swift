@@ -62,4 +62,3 @@ extension HomeController: UICollectionViewDelegateFlowLayout {
         viewModel.edgeInset
     }
 }
-

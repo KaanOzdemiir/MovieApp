@@ -25,6 +25,8 @@ public extension UICollectionView {
     }
     
     func dequeue<C: CollectionViewReusableCellProtocol>(cell: C.Type, indexPath: IndexPath) -> C {
+        // swiftlint:disable force_cast
         self.dequeueReusableCell(withReuseIdentifier: C.cellIdentifier, for: indexPath) as! C
+        // swiftlint:enable force_cast
     }
 }

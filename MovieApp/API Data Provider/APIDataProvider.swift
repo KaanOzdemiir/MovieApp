@@ -8,13 +8,12 @@
 import API
 import Alamofire
 
-
 class APIDataProvider: DataProviderProtocol {
     
     static let shared = APIDataProvider()
     private let session = Session()
     
-    func request<R>(for request: R, result: DataProviderResult<R.ResponseType>?) where R : RequestProtocol {
+    func request<R: RequestProtocol>(for request: R, result: DataProviderResult<R.ResponseType>?) {
         let afRequest = AlamofireRequestConverter(request)
         
         session.request(

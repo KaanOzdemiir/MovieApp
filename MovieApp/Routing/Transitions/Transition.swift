@@ -13,4 +13,3 @@ protocol Transition: AnyObject {
     func open(_ viewController: UIViewController)
     func close(_ viewController: UIViewController)
 }
-

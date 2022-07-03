@@ -7,6 +7,7 @@
 
 public protocol RequestProtocol {
     associatedtype ResponseType: Decodable
+    
     var path: String { get }
     var headers: RequestHeaders { get }
     var parameters: RequestParameters { get }

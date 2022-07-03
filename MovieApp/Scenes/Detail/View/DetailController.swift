@@ -13,7 +13,7 @@ class DetailController: BaseController<DetailViewModel> {
     @IBOutlet private weak var bookMarkButton: UIButton!
     @IBOutlet private weak var backButton: UIButton!
     @IBOutlet private weak var backdropImageView: UIImageView!
-    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet private weak var titleLabel: UILabel!
     
     @IBOutlet private weak var scrollView: UIScrollView!
     @IBOutlet private weak var scrollViewTop: NSLayoutConstraint!

@@ -8,3 +8,4 @@ Swift technology
 Used Libraries
 - Alamofire
 - Kingfisher
+- SwiftLint
